@@ -5,18 +5,18 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客">
+<meta name="keywords" content="Moranvl 振振">
 <meta name="description" content="">
 <meta name="theme-color" content="#000">
 <title>振振的小屋</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1603636473904">
+<link rel="shortcut icon" href="/favicon.ico?v=1603639197432">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/default.css"
+<link href="/media/hljs/styles/androidstudio.css"
   rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -86,19 +86,6 @@
             
               
             
-            <li class="nav-item ">
-              
-              
-                <a href="/archives/" target="_self">
-                  <i class="fa fa-archive"></i> 归档
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
             <li class="nav-item nav-item-active">
               
               
@@ -124,9 +111,9 @@
           
             
               <li class="nav-item ">
-                <a href="/friends/" target="_self">
+                <a href="/friends/" target="_blank">
                   
-                    <i class="fa fa-address-book"></i> 友情链接
+                    <i class="fa fa-address-book"></i> 亲爱的朋友们
                   
                 </a>
               </li>
@@ -177,7 +164,7 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">在读于南京航空航天大学</p>
+    <p class="site-author-name">Zhen Zhao</p>
     
     <div class="site-description right-motion">
       
@@ -331,6 +318,48 @@
   </div>
   
   
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <div class="aplayer" id="aplayer"></div>
+  <script>
+  let musics = JSON.parse('[{"author":"柳爽","cover":"","lrc":"","musicLink":"https://sharefs.yun.kugou.com/202010252314/1964f59c7fc89f1a1c27254a23192e1b/G113/M02/0E/05/sQ0DAFlSjmmALd1-AEasLfKVJAs074.mp3","musicName":"莫妮卡"},{"author":"","cover":"","lrc":"","musicLink":"https://sharefs.yun.kugou.com/202010252315/a82ace85fab022697a60374aebd400a1/G202/M04/1B/1B/Cg4DAF5o4i2AXL_kAELZEVKnQWw514.mp3","musicName":"一生所爱"}]');
+  let mediaMusic = [];
+  for (let i = 0; i < musics.length; i++) {
+    let item = musics[i];
+    mediaMusic.push({
+      name: item.musicName,
+      artist: item.author,
+      url: item.musicLink,
+      lrc: item.lrc,
+      cover: item.cover
+    });
+  }
+
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      lrcType: 3,
+      listFolded: false,
+      listMaxHeight: 90,
+      audio: mediaMusic
+  });
+  window.addEventListener('load', function() {
+    let postBody = document.querySelector('#post_body');
+    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+    postBody && hs.forEach(h => {
+      let helems = postBody.querySelectorAll(h);
+      if (helems.length > 0) {
+        helems.forEach(elem => {
+          elem.id = encodeURI(elem.id);
+        })
+      }
+    })
+  })
+  </script>
+
+
   
 </div>
 <script>
@@ -519,14 +548,21 @@
 &lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
 &lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
 &lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+&lt;p&gt;E-Mail&lt;br&gt;
+Moranvl@nuaa.edu.cn&lt;/p&gt;
 ">关于</a>
       </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://moranvl.github.io/post/hello-gridea/"" data-c="
-          &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
+          &lt;!-- more --&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
 ✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
 &lt;!-- more --&gt;
+&lt;h1 id=&#34;可以用markdown&#34;&gt;可以用Markdown&lt;/h1&gt;
+&lt;h2 id=&#34;可是&#34;&gt;可是&lt;/h2&gt;
+&lt;h3 id=&#34;真的吗&#34;&gt;真的吗&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;http://fehey.com/&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;
@@ -830,13 +866,6 @@
 
 </script>
 <script src="/media/js/motion.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 200
-  });
-</script>
 
 
 
