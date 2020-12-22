@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="theme-color" content="#212529">
 <title>振振的小屋</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1608630370737">
+<link rel="shortcut icon" href="/favicon.ico?v=1608631513932">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -180,7 +180,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -223,6 +223,80 @@
         <div class="section-box pisces">
           <section class="section bg-color posts-expand slide-down-in">
             
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://moranvl.github.io/post/hyperledger-fabric-wang-luo-da-jian-guo-cheng/">
+      Hyperledger Fabric 网络搭建过程
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2020-12-22 17:49:24">2020-12-22</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>152<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</section>
+      <div class="post-body">
+        
+        
+          
+            <!-- 没有手动摘要切开启了自动摘要,则根据配置筛除摘要内容 -->
+            
+            
+              
+              
+              
+            
+              
+              
+              
+            
+              
+              
+              
+            
+            
+              <p><h1 id="1-安装依赖">1 安装依赖</h1>
+<h2 id="ubuntu">Ubuntu</h2>
+<h2 id="vim-git">vim, git</h2>
+
+                
+              <p>
+            
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://moranvl.github.io/post/hyperledger-fabric-wang-luo-da-jian-guo-cheng/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+        <footer class="post-footer">
+          <div class="post-eof"></div>
+        </footer>
+      
+    </div>
+  </article>
+
   <article class="post-list-box  post box-shadow-wrapper">
     <div class="article-wrapper bg-color">
       <section class="post-header">
@@ -677,6 +751,55 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://moranvl.github.io/post/hyperledger-fabric-wang-luo-da-jian-guo-cheng/"" data-c="
+          &lt;h1 id=&#34;1-安装依赖&#34;&gt;1 安装依赖&lt;/h1&gt;
+&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;
+&lt;h2 id=&#34;vim-git&#34;&gt;vim, git&lt;/h2&gt;
+&lt;h2 id=&#34;docker&#34;&gt;docker&lt;/h2&gt;
+&lt;h2 id=&#34;docker-compose&#34;&gt;docker-compose&lt;/h2&gt;
+&lt;h2 id=&#34;golang&#34;&gt;Golang&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;官网安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-编写yaml文件&#34;&gt;2 编写yaml文件&lt;/h1&gt;
+&lt;h2 id=&#34;configtxyaml&#34;&gt;configtx.yaml&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;组织结构以及公钥私钥&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;crypto-configyaml&#34;&gt;crypto-config.yaml&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;相关组织的详细信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;docker-composeyml&#34;&gt;docker-compose.yml&lt;/h2&gt;
+&lt;h2 id=&#34;configyaml&#34;&gt;config.yaml&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fabric-SDK-GO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-fabric-go-sdk&#34;&gt;3 Fabric-Go-SDK&lt;/h1&gt;
+&lt;h2 id=&#34;创建sdkinit&#34;&gt;创建sdkInit&lt;/h2&gt;
+&lt;h2 id=&#34;坑&#34;&gt;坑&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;以下包名应当进行替换&lt;/li&gt;
+&lt;li&gt;&amp;quot;github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/ ** cauthdsl **&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/** policydsl ** &amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-chaincode&#34;&gt;4 Chaincode&lt;/h1&gt;
+&lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;shim&lt;/li&gt;
+&lt;li&gt;&amp;quot;github.com/hyperledger/fabric/core/chaincode/shim&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;github.com/hyperledger/fabric-chaincode-go/shim&amp;quot;&lt;/li&gt;
+&lt;li&gt;peer&lt;/li&gt;
+&lt;li&gt;&amp;quot;github.com/hyperledger/fabric/protos/peer&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;github.com/hyperledger/fabric-protos-go/peer&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;h2 id=&#34;实例化&#34;&gt;实例化&lt;/h2&gt;
+&lt;h1 id=&#34;5-编写main&#34;&gt;5 编写Main&lt;/h1&gt;
+">Hyperledger Fabric 网络搭建过程</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://moranvl.github.io/post/wu-en-da/"" data-c="

@@ -2,13 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://moranvl.github.io</id>
     <title>振振的小屋</title>
-    <updated>2020-12-22T09:49:23.185Z</updated>
+    <updated>2020-12-22T10:05:31.019Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://moranvl.github.io"/>
     <link rel="self" href="https://moranvl.github.io/atom.xml"/>
     <logo>https://moranvl.github.io/images/avatar.png</logo>
     <icon>https://moranvl.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 振振的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[Hyperledger Fabric 网络搭建过程]]></title>
+        <id>https://moranvl.github.io/post/hyperledger-fabric-wang-luo-da-jian-guo-cheng/</id>
+        <link href="https://moranvl.github.io/post/hyperledger-fabric-wang-luo-da-jian-guo-cheng/">
+        </link>
+        <updated>2020-12-22T09:49:24.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[吴恩达机器学习]]></title>
         <id>https://moranvl.github.io/post/wu-en-da/</id>
